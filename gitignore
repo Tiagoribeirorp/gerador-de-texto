@@ -1,0 +1,15 @@
+# Environment variables
+.env
+.env.local
+.env.prod
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Streamlit
+.streamlit/
+
+# pages
+# login.py
