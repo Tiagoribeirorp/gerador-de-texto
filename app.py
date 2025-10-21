@@ -12,12 +12,12 @@ if "logged_in" not in st.session_state or not st.session_state["logged_in"]:
 
 # Configuração da página
 st.set_page_config(
-    page_title="Gerador de conteúdo Ideatore 🤖", 
+    page_title="Gerador de conteúdo 🤖", 
     page_icon="🤖",
     layout="centered"
 )
 
-st.title("Gerador de Conteúdo Ideatore 🤖")
+st.title("Gerador de Conteúdo 🤖")
 
 # Verificar se a chave da API está configurada
 api_key = os.getenv("OPENAI_API_KEY")
@@ -136,3 +136,4 @@ if st.button("🚀 Gerar Conteúdo", type="primary", use_container_width=True):
                     st.warning(f"⚠️ O texto excede o limite de {max_chars} caracteres para {platform}.")
                 elif min_chars > 0 and char_count < min_chars:
                     st.warning(f"⚠️ O texto está abaixo do mínimo de {min_chars} caracteres para {platform}.")
+
